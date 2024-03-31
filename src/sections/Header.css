@@ -1,0 +1,30 @@
+
+
+.header{
+      background-image: url('../assets/Background_img.png');
+    max-width: 1920px;
+   min-height: 100vh;
+    background-size: cover;
+  }
+
+p:hover{
+    cursor: pointer;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        max-height: 20vh;
+        flex-shrink: 0;
+    }
+}
+
+@media only screen and(max-width: 900px) {
+    .header {
+        max-height: 10vh;
+
+    }
+}
