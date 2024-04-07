@@ -5,6 +5,7 @@ import img_4 from '../assets/image_4.png'
 import img_5 from '../assets/image_5.png'
 import img_6 from '../assets/image_6.png'
 import {NavLink, Outlet} from "react-router-dom";
+
 import {useState} from "react";
 
 const ProductR = () => {
@@ -40,30 +41,11 @@ const ProductR = () => {
                 id:6,
                 image: img_6,
                 text: 'часы'
-            },3
+            },
         ]
     )
-    //
-    // const [choice, setChoice] = useState([
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    //     {
-    //         text: 'Свадьба'
-    //     },
-    // ])
+
+
 
     return(
         <div>
@@ -72,7 +54,7 @@ const ProductR = () => {
                 <h2 className=' mt-8 flex justify-center '>К мероприятиям</h2>
                 <h1 className=' mb-10 flex justify-center text-[30px] font-semibold text-center'>Настоящая красота здесь!</h1>
                 <div className='md:flex pho:justify-center text-center  md:justify-between flex-wrap gap-4'>
-                    <p className='uppercase border-2 shadow-md px-6 my-2 py-1 bg-black text-white hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>Свадьба</p>
+                    <p  className='uppercase border-2 shadow-md px-6 my-2 py-1 bg-black text-white hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>Свадьба</p>
                     <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>МУЖУ</p>
                     <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>жене</p>
                     <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>партнеру</p>
