@@ -4,6 +4,7 @@ import img_3 from '../assets/image_3.png'
 import img_4 from '../assets/image_4.png'
 import img_5 from '../assets/image_5.png'
 import img_6 from '../assets/image_6.png'
+import {NavLink, Outlet} from "react-router-dom";
 import {useState} from "react";
 
 const ProductR = () => {
@@ -42,7 +43,27 @@ const ProductR = () => {
             },3
         ]
     )
-
+    //
+    // const [choice, setChoice] = useState([
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    //     {
+    //         text: 'Свадьба'
+    //     },
+    // ])
 
     return(
         <div>

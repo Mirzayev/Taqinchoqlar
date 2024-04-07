@@ -1,27 +1,48 @@
-import { useState } from 'react'
-import HeaderR from "./sections/HeaderR.jsx";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import './App.css'
-import ProductR from "./sections/ProductR.jsx";
-import ChoiceR from "./sections/ChoiceR.jsx";
-import GiftR from "./sections/GiftR.jsx";
-import SocialMedida from "./sections/SocialMedida.jsx";
-import NewsletterR from "./sections/NewsletterR.jsx";
-import FooterR from "./sections/FooterR.jsx";
+import LDefault from "./Layoutl/LDefault.jsx";
+import ContactModal from "./components/ContactModal.jsx";
+import Work from "./pages/Work.jsx";
+import Home from "./pages/Home.jsx";
+import Search from './pages/Search.jsx';
+
 
 function App() {
 
+    const routes = createBrowserRouter(
+        [
+            {
+                path: "/",
+                element: <LDefault/>,
+                children: [
+                    {
+                        index: true,
+                        element: <Home/>
+                    },
+                    {
+                        path: '/contact',
+                        element: <ContactModal/>
+                    },
+                    {
+                        path: "/job",
+                        element: <Work/>
+                    },
+                    {
+                        path: "/search",
+                        element: <Search/>
+                    },
 
-  return (
-  <div className='max-w-[1920px]'>
-   <HeaderR/>
-      <ProductR/>
-      <ChoiceR/>
-      <GiftR/>
-      <SocialMedida/>
-      <NewsletterR/>
-      <FooterR/>
-  </div>
-  )
+
+                ]
+            }
+        ]
+    )
+
+    return (
+        <div className='max-w-[1920px] '>
+            <RouterProvider router={routes}/>
+        </div>
+    )
 }
 
 export default App

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contactModal{
+  background-color: rgba();
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}

@@ -34,7 +34,7 @@ const GiftR = () => {
        <div className='flex xl:justify-between flex-wrap gap-4 pho:justify-center'>
            {gift.map((event) => {
                return(
-                   <div className='flex justify-center '>
+                   <div className='flex justify-center ' key={event.id}>
                        <div key={event.id} className='relative '>
                            <img className='w-full' src={event.image} alt=""/>
                            <div className='flex justify-center'><span className='absolute bottom-10 text-white w-[130px] text-center'>{event.text}</span></div>
@@ -45,7 +45,7 @@ const GiftR = () => {
            }
        </div>
         <div className='flex justify-center my-10'>
-            <button className='bg-black text-white uppercase px-6 py-1'>читать наш блог</button>
+            <button className='bg-black text-white uppercase px-4 py-2'>читать наш блог</button>
         </div>
     </div>
 </div>

@@ -3,7 +3,7 @@
 .header{
       background-image: url('../assets/Background_img.png');
     max-width: 1920px;
-   min-height: 100vh;
+   min-height: 90vh;
     background-size: cover;
   }
 
@@ -28,3 +28,4 @@ i:hover{
 
     }
 }
+
