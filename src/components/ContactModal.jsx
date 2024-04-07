@@ -1,6 +1,6 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import './contactModal.css'
-const ContactModal = ({closeModal}) => {
+const ContactModal = ({closeModal,modal}) => {
 
  const [showInput, setShowInput] = useState(true)
     const [userName, setUserName] = useState('')
@@ -8,18 +8,28 @@ const ContactModal = ({closeModal}) => {
     const [userEmail, setUserEmail] = useState('')
     const [userGender, setUserGender] = useState('')
 
+const onClose = () =>{
+     closeModal()
+    document.body.style.overflow = 'auto'
+}
 
 
 function Change(){
      setShowInput(true)
 }
 
+    useEffect(() => {
+        if(modal){
+            document.body.style.overflow = 'hidden'
+        }else document.body.style.overflow = 'auto'
+    }, []);
+
     return (
 
-                <div className='flex  justify-center   contactModal accent-[#50d71e]'>
+                <div className='absolute flex  justify-center   contactModal accent-[#50d71e]'>
                     <div className='fixed    h-full w-full  z-20 top-[20%]   left-[37%]'>
                         <div className=' w-[400px] relative my-3 leading-10 bg-slate-300 px-10 py-10 shadow-md shadow-black '>
-                            <i onClick={closeModal}
+                            <i onClick={onClose}
                                className="fa-solid fa-circle-xmark absolute top-3 right-3 text-red-500 text-xl hover:text-red-600 duration-400"></i>
 
                             <input

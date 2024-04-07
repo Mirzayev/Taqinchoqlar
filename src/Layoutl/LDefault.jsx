@@ -55,7 +55,7 @@ const LDefault = () => {
 
                         <div className='flex items-center  '>
 
-                            <NavLink className='w-12'>
+                            <NavLink className='w-12' to={"/"}>
                                 <Lottie animationData={heardIcon}></Lottie>
                             </NavLink>
                             <Lottie className='w-14 hover:cursor-pointer block' animationData={darkMode}></Lottie>
@@ -72,7 +72,7 @@ const LDefault = () => {
 
             </div>
             {modal && <div>
-                <ContactModal modal={modal} closeModal={closeModal}/>
+                <ContactModal closeModal={closeModal}/>
             </div>}
             <div>
 
