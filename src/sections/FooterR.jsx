@@ -56,7 +56,7 @@ import Email from '../animations/emailIcon.json'
                         <p className=' pb-[22px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
                         <div className='flex gap-1 mb-8 items-center'>
 
-                            <Lottie className='w-10 hover:cursor-pointer' animationData={youtube}></Lottie>
+                            <Lottie href="https://www.youtube.com/watch?v=TsrCFVVhZYU&list=PL2_4P0nVeK2pYirP8brQ-WQiat0Sjc8dn&index=3" className='w-10 hover:cursor-pointer' animationData={youtube}></Lottie>
                             <Lottie className='w-20 hover:cursor-pointer' animationData={telegram}></Lottie>
                             <Lottie className='w-10 hover:cursor-pointer' animationData={facebook}></Lottie>
                             <Lottie className='w-12  hover:cursor-pointer' animationData={vkIcon}></Lottie>

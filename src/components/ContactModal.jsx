@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import './contactModal.css'
+import {Button} from "antd";
 const ContactModal = ({closeModal,modal}) => {
 
  const [showInput, setShowInput] = useState(true)
@@ -52,9 +53,9 @@ function Change(){
                                     <span>Ayol</span> <input className='w-4' type="checkbox" name='gender'/></div>
                             </form>
                             <div className='flex justify-center mt-8'>
-                                <button
+                                <Button
                                     className='bg-green-400 text-white font-mono px-4 rounded-md hover:bg-green-600 duration-300 active:bg-green-700'>Submit
-                                </button>
+                                </Button>
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,7 @@
     width: 100vw;
     position: absolute;
     z-index: 9999;
-    background-color: rgba(113, 142, 147, 0.65);
+    background-color: rgba(113, 142, 147, 0.1);
     padding: 0;
     margin: 0;
 }

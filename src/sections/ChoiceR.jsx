@@ -1,7 +1,7 @@
+import {Button} from "antd";
 
 
-
-  const ChoiceR = () => {
+const ChoiceR = () => {
 
     return(
         <div className='bg-black max-w-[1920px] '>
@@ -18,7 +18,7 @@
                         </p>
                     </div>
                     <div className='flex justify-center py-10'>
-                        <button className='bg-white text-black px-5 py-1 uppercase text-[18px] hover:bg-slate-300 duration-200'>наши салоны</button>
+                        <Button className={"px-10 py-2 h-full"}>наши салоны</Button>
                     </div>
                 </div>
             </div>
