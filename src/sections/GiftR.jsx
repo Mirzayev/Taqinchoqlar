@@ -2,6 +2,7 @@ import img_7 from '../assets/image_7.png'
 import img_8 from '../assets/image_8.png'
 import img_9 from '../assets/image_9.png'
 import {useState} from "react";
+import {Button} from "antd";
 
 
 const GiftR = () => {
@@ -45,7 +46,7 @@ const GiftR = () => {
            }
        </div>
         <div className='flex justify-center my-10'>
-            <button className='bg-black text-white uppercase px-4 py-2'>читать наш блог</button>
+            <Button className='bg-black text-white uppercase px-8 py-2 h-full'>читать наш блог</Button>
         </div>
     </div>
 </div>

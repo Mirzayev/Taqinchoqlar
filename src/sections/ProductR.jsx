@@ -55,12 +55,12 @@ const ProductR = () => {
                     <h1 className=' mb-10 flex justify-center text-[30px] font-semibold text-center'>Настоящая красота
                         здесь!</h1>
                     <div className='md:flex pho:justify-center text-center  md:justify-between flex-wrap gap-4'>
-                        <p className='uppercase border-2 shadow-md px-6 my-2 py-1 bg-black text-white hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>Свадьба</p>
-                        <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>МУЖУ</p>
-                        <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>жене</p>
-                        <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>партнеру</p>
-                        <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>коллекции</p>
-                        <p className='uppercase border-2 shadow-md px-6   my-2 py-1 hover:bg-slate-600 hover:text-white duration-200 active:bg-slate-600 '>редкость</p>
+                        <Button className='uppercase  shadow-lg px-10 my-2 py-[6px] h-full bg-black  text-white'>Свадьба</Button>
+                        <Button className='uppercase  shadow-lg px-10   my-2 py-[6px] h-full  '>МУЖУ</Button>
+                        <Button className='uppercase  shadow-lg px-10   my-2 py-[6px] h-full  '>жене</Button>
+                        <Button className='uppercase  shadow-lg px-10   my-2 py-[6px] h-full  '>партнеру</Button>
+                        <Button className='uppercase  shadow-lg px-10   my-2 py-[6px] h-full  '>коллекции</Button>
+                        <Button className='uppercase  shadow-lg px-10   my-2 py-[6px] h-full  '>редкость</Button>
                     </div>
 
                     <div className='grid  lg:grid-cols-3 sm:grid-cols-2 my-8 gap-10'>
