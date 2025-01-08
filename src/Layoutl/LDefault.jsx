@@ -42,7 +42,7 @@ const LDefault = () => {
             <div className='bg-gray-800'>
 
                 <div className=' flex justify-center gap-10 lg:gap-20 xl:gap-40 flex-wrap  items-center text-white py-4'>
-                    <div className='lg:flex gap-4 pho:hidden '>
+                    <div className='lg:flex gap-4 pho:hidden'>
 
                         <NavLink to={"/"} className=' hover:text-slate-400 duration-200'>Контрагентам</NavLink>
                         <NavLink to={"https://designs.ai/"}
@@ -50,7 +50,6 @@ const LDefault = () => {
                         <NavLink to={"/job"} className='hover:text-slate-400 duration-200 flex gap-1'>
                             <Lottie className='w-5' animationData={jobIcon}></Lottie>
                             Вакансии</NavLink>
-
                     </div>
                     <div>
                         <img src={logo} alt=""/>

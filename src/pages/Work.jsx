@@ -6,7 +6,6 @@ const Work = () => {
     return (
         <div className='work  min-h-auto w-full py-10  bg-slate-100 flex justify-center'>
             <h2 className='flex   items-center  text-[45px] font-mono gap-3 text-red-400'>Вакансий не найдено
-            <Lottie animationData={blockIcon}></Lottie>
             </h2>
         </div>
     )
